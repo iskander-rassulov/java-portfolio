@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Iskandar Rassulov</title>
+  <link rel="icon" href="images/icontab.png" type="image/png">
+  <!-- Подключаем шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="fade-in">
+    <column>
+      <!-- Первый row -->
+      <row>
+        <column>
+          <tile class="name-tile">Iskandar Rassulov</tile>
+          <tile class="position-tile">Back-end developer</tile>
+        </column>
+        <tile class="avatar-tile"></tile>
+        <tile class="skills-tile"></tile>
+      </row>
+  
+      <!-- Второй row -->
+      <row>
+        <tile class="experience-tile"></tile>
+        <tile class="decoration-tile"></tile>
+        <tile class="about-tile"></tile>
+      </row>
+  
+      <!-- Третий row -->
+      <row>
+        <tile class="contacts-tile"></tile>
+        <a href="files/cv.pdf" class="tile cv-tile" download>Download CV</a>
+      </row>
+    </column>
+  </section>
+  
+  <section id="projects" class="fade-out">
+      <div class="project-container">
+        <!-- Проекты будут добавлены через JavaScript -->
+      </div>
+  </section>  
+
+  <script src="scripts/header-scripts.js"></script>
+  <script src="scripts/skill-scripts.js"></script>
+  <script src="scripts/experience-scripts.js"></script>
+  <script src="scripts/about-scripts.js"></script>
+  <script src="scripts/contacts-scripts.js"></script>
+  <script src="scripts/projects-scripts.js"></script>
+</body>
+
+</html>
