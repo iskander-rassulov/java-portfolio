@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="tile-styles.css">
+  <link rel="stylesheet" href="project-styles.css">
 </head>
 <body>
   <header>
@@ -24,28 +26,35 @@
 
   <section id="home" class="fade-in">
     <column>
-      <!-- Первый row -->
-      <row>
-        <column>
-          <tile class="name-tile">Iskandar Rassulov</tile>
-          <tile class="position-tile">Back-end developer</tile>
-        </column>
-        <tile class="avatar-tile"></tile>
-        <tile class="skills-tile"></tile>
-      </row>
-  
-      <!-- Второй row -->
-      <row>
-        <tile class="experience-tile"></tile>
-        <tile class="decoration-tile"></tile>
-        <tile class="about-tile"></tile>
-      </row>
-  
-      <!-- Третий row -->
-      <row>
-        <tile class="contacts-tile"></tile>
-        <a href="files/cv.pdf" class="tile cv-tile" download>Download CV</a>
-      </row>
+    <!-- 1st row -->
+    <row>
+      <div class="avatar-tile"></div>
+      <column>
+        <div class="name-tile"></div>
+        <div class="position-tile"></div>
+      </column>
+      <div class="comp-skills-tile"></div>
+    </row>
+
+    <!-- 2nd row -->
+    <row>
+      <column>
+        <div class="experience-tile"></div>
+        <div class="prime-skills-tile"></div>
+      </column>
+
+      <column>
+        <div class="info-tile"></div>
+        <div class="about-tile"></div>
+      </column>
+
+    </row>
+
+    <!-- 3rd row -->
+    <row>
+      <div class="contacts-tile"></div>
+    </row>
+
     </column>
   </section>
   

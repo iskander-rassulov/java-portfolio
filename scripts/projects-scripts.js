@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ${technologies.map(tech => `<li>${tech}</li>`).join('')}
         </ul>
         <div class="project-buttons">
-          <a href="${viewLink}" target="_blank" class="btn view-project">View Project</a>
+          <a href="${viewLink}" target="_blank" class="btn view-project">Explore</a>
           <a href="${githubLink}" target="_blank" class="btn github-link">GitHub</a>
         </div>
       `;
