@@ -1,0 +1,165 @@
+/* Базовый стиль для всех плиток */
+.tile {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .avatar-tile {
+    width: 12vw;  
+    height: 12vw;           
+    overflow: hidden;
+  }
+  
+  .avatar-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;       /* Либо contain, если важно увидеть всю картинку */
+    display: block;
+  }
+  
+  .name-tile {
+    width: 12vw;
+    height: 5.75vw;
+    padding: 0.5rem;
+  
+    display: flex;
+    justify-content: center; /* горизонтальное выравнивание */
+    align-items: center;     /* вертикальное выравнивание */
+  
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .position-tile {
+    width: 12vw;
+    height: 5.75vw;
+    padding: 0.5rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* Инвертируем цвета */
+    background-color: #333;
+    color: #fff;
+  
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+
+    
+    border-radius: 12px;
+
+  }
+  
+  .prime-skills-tile {
+    width: 24vw;
+    height: 12vw;
+    padding: 2rem;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* Центр по горизонтали */
+    /* justify-content: center;  <-- не обязательно, иначе все "сожмётся" к центру по вертикали */
+    
+  }
+  
+  .prime-skills-tile .tile-title {
+    margin-bottom: 0.3rem; /* промежуток между заголовком и текстом */
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .prime-skills-tile .tile-content {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  
+  .experience-tile {
+    width: 24vw;
+    height: 12vw;
+    padding: 2rem;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .experience-tile .tile-title {
+    margin-bottom: 0.3rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .experience-tile .tile-content {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .decoration-tile {
+    width: 6vw;
+    height: 12vw;
+    overflow: hidden; /* Чтобы изображение не выходило за границы */
+    padding: 0; /* Убираем лишние отступы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .decoration-tile img {
+    width: 110%;
+    height: 100%;
+    object-fit: fill; /* Заполняет контейнер без искажений */
+    display: block;
+  }
+  
+  .about-tile {
+    width: 18vw;
+    height: 12vw;
+    padding: 1.5rem;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .about-tile .tile-title {
+    margin-bottom: 0.3rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .about-tile .tile-content {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .contacts-tile {
+    width: 49vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw; /* Отступы между ссылками */
+  }
+  
+  .contacts-tile a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .contacts-tile a:hover {
+    text-decoration: underline;
+  }
+  
+  
