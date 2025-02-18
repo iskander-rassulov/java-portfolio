@@ -8,7 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
         image: 'images/screen-file-converter.png',
         description: 'This application allows you to convert images, audio, video and documents to various formats right from your browser',
         technologies: ['Java', 'Spring Boot', 'FFmpeg', 'Rest API', 'Gradle', 'PostgreSQL',  'CORS'],
-        viewLink: 'https://example.com',
+        viewLink: 'https://www.youtube.com/watch?v=M_9XGhGIzjk',
+        githubLink: 'https://github.com/iskander-rassulov/SPRING-file-converter',
+      },
+      {
+        name: 'Database Wizard',
+        image: 'images/screen-dbwizard.png',
+        description: 'Database Wizard is a tool for managing database tables through an intuitive web interface',
+        technologies: ['Java', 'Spring Boot', 'Rest API', 'Maven', 'PostgreSQL'],
+        viewLink: 'https://www.youtube.com/watch?v=D8zTbJWPgSg',
         githubLink: 'https://github.com/iskander-rassulov/SPRING-file-converter',
       },
       {
