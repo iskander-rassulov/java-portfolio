@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         description: 'Database Wizard is a tool for managing database tables through an intuitive web interface',
         technologies: ['Java', 'Spring Boot', 'Rest API', 'Maven', 'PostgreSQL'],
         viewLink: 'https://www.youtube.com/watch?v=D8zTbJWPgSg',
-        githubLink: 'https://github.com/iskander-rassulov/SPRING-file-converter',
+        githubLink: 'https://github.com/iskander-rassulov/SPRING-database-wizard',
       },
       {
         name: 'Medical Records Management System',
