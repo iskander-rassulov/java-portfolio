@@ -112,3 +112,15 @@ section {
   text-align: center;
   padding: 2rem;
 }
+
+/* styles.css */
+
+/* Для разрешений меньше или равно 1600x900 */
+@media (max-width: 1600px), (max-height: 900px) {
+  body {
+      transform: scale(0.9);
+      transform-origin: 0 0;
+      width: 133.33%; /* 1/0.75 = 1.3333 */
+      height: 133.33%; /* 1/0.75 = 1.3333 */
+  }
+}
