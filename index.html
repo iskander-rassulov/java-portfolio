@@ -1,111 +1,32 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iskandar Rassulov</title>
-  <link rel="icon" href="images/icon.png" type="image/png">
-  <!-- Подключаем шрифты -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="tile-styles.css">
-  <link rel="stylesheet" href="project-styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Device</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="home" class="fade-in">
-    <column>
-    <!-- 1st row -->
-    <row>
-      <div class="tile avatar-tile">
-        <img src="images/avatar.jpg">
-      </div>
-      
-      <column>
-        <div class="tile name-tile">Iskandar Rassulov</div>
-        <div class="position-tile">Back-end Developer</div>
-      </column>
-      <div class="tile prime-skills-tile">
-        <div class="tile-title">Skills</div>
-        <div class="tile-content">
-          <strong>Backend:</strong> Java, C#, Spring Boot, REST API <br>
-          <strong>Databases:</strong> PostgreSQL, MySQL <br>
-          <strong>Build Tools:</strong> Maven, Gradle <br>
-          <strong>Version Control:</strong> Git, GitHub
+    <div id="screen-choose-device" class="screen active">
+        <h1>Choose Your Device</h1>
+        <p class="hint">Select either PC or Mobile to proceed</p>
+        <div class="tile-container">
+            <div id="pc-tile" class="tile">
+                <span class="tile-symbol">🖥️</span>
+                <span class="tile-text">PC</span>
+            </div>
+            <div id="mobile-tile" class="tile">
+                <span class="tile-symbol">📱</span>
+                <span class="tile-text">Mobile</span>
+            </div>
         </div>
-      </div>
-      
-    </row>
-
-    <!-- 2nd row -->
-    <row>
-        <div class="tile experience-tile">
-          <div class="tile-title">Experience</div>
-          <div class="tile-content">
-            Working on personal projects. Check Project sections <br> 2024 - 2025
-          </div>
-          <br>
-          <div class="tile-title">Education</div>
-          <div class="tile-content">
-            Suleyman Demirel University <br> Computer Science | Bachelor's Degree <br> 2019 - 2023
-          </div>
+        <!-- Информация об авторе внизу -->
+        <div class="credits">
+            <span>Made by Iskandar Rassulov</span>
+            <span><a href="https://github.com/iskander-rassulov" target="_blank">• GitHub</a></span>
         </div>
-
-        <div class="tile decoration-tile">
-          <img src="images/decoration.jpg">
-        </div>
-
-      <div class="tile about-tile">
-        <div class="tile-title">About Me</div>
-        <div class="tile-content">
-          Hello, my name is Iskandar. I am <strong>23</strong> years old.
-          I am a citizen of <strong>Kazakhstan</strong>. I speak <strong>Russian, English and Kazakh</strong><br><br>
-          I am currently looking for my <strong>first professional experience</strong>.
-          I like to develop the <strong>logic of websites</strong> for their healthy functioning.
-        </div>
-      </div>
-      
-
-    </row>
-
-    <!-- 3rd row -->
-    <row>
-      <div class="tile contacts-tile">
-        <a href="https://github.com/iskander-rassulov" target="_blank">GitHub</a>
-        <a href="mailto:iskander.rassulov.2002@gmail.com">iskander.rassulov.2002@gmail.com</a>
-        <a href="https://www.linkedin.com/in/iskandar-rassulov/" target="_blank">LinkedIn</a>
-      </div>
-      <div class="tile download-tile" onclick="downloadCV()">
-        Download CV
-      </div>
-      
-    </row>
-
-    </column>
-  </section>
-  
-  <section id="projects" class="fade-out">
-      <div class="project-container">
-        <!-- Проекты будут добавлены через JavaScript -->
-      </div>
-  </section>  
-
-  <script src="scripts/header-scripts.js"></script>
-  <script src="scripts/projects-scripts.js"></script>
-  <script src="scripts/home-scripts.js"></script>
-  <script src="scripts/adaptive-scripts.js"></script>
+    </div>
+    <script src="scripts.js"></script>
 </body>
-
 </html>

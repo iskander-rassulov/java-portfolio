@@ -1,126 +1,93 @@
-/******************************************************************************/
-/*                       1. ПЕРЕМЕННЫЕ И БАЗОВАЯ СБРОСК                      */
-/******************************************************************************/
-:root {
-  --bg-color: #f0f0f0;         /* Основной фон */
-  --gap-row: 1vh;
-  --gap-column: 1vh;
-  user-select: none;           /* Отключает выделение текста */
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
 body {
-  height: 100%;
-  font-family: 'Source Sans 3', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.4;
-  overflow-x: hidden;
-}
-
-/******************************************************************************/
-/*                       2. ОБЩИЕ ТИПОГРАФИЧЕСКИЕ СТИЛИ                       */
-/******************************************************************************/
-h1 {
-  margin: 1rem;
-  text-align: center;
-}
-
-/******************************************************************************/
-/*                       3. КОМПОНЕНТЫ РАЗМЕТКИ (row, column)                  */
-/******************************************************************************/
-row {
-  display: flex;
-  flex-direction: row;
-  gap: var(--gap-row);
-  justify-content: center;
-}
-
-column {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-column);
-}
-
-/******************************************************************************/
-/*                      6. ХЕДЕР (Меню и пр. настройки)                       */
-/******************************************************************************/
-header {
-  background-color: #f5f5f5;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-header nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7f7f7;
   margin: 0;
   padding: 0;
-  gap: 2rem;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  font-family: 'Source Sans 3', sans-serif;
-  font-weight: 600;
-  color: #333;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/******************************************************************************/
-/*                 7. ОСНОВНЫЕ СЕКЦИИ (home, секции сайта и т.п.)             */
-/******************************************************************************/
-section {
-  display: flex;            /* Центрирование по горизонтали/вертикали */
-  justify-content: center;
-  align-items: center;
-  height: 100vh;            /* Секция на всю высоту экрана */
-  width: 100vw;             /* На всю ширину */
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;       /* По умолчанию скрываем */
-  z-index: 1;               /* Ниже header */
-}
-
-.fade-in {
-  visibility: visible;
-  z-index: 10;
-}
-
-#home {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  text-align: center;
-  padding: 2rem;
+  color: #333;
 }
 
-/* styles.css */
+/* Общий стиль для экранов */
+.screen {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  display: none; /* Изначально все скрыты */
+}
 
-/* Для разрешений меньше или равно 1600x900 */
-@media (max-width: 1600px), (max-height: 900px) {
-  body {
-      transform: scale(0.9);
-      transform-origin: 0 0;
-      width: 133.33%; /* 1/0.75 = 1.3333 */
-      height: 133.33%; /* 1/0.75 = 1.3333 */
-  }
+.screen.active {
+  display: block; /* Активный экран показываем */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.hint {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Плитки */
+.tile-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.tile:hover {
+  background-color: #f0f0f0;
+  border-color: #aaa;
+}
+
+.tile-symbol {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #353535;
+}
+
+.tile-text {
+  font-size: 16px;
+}
+
+/* Информация об авторе */
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.credits a {
+  color: #778da9;
+  text-decoration: none;
+}
+
+.credits a:hover {
+  color: #415a77;
 }
