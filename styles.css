@@ -1,93 +1,49 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f7f7f7;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: #333;
+  margin: 0;
 }
 
-/* Общий стиль для экранов */
-.screen {
-  text-align: center;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 400px;
-  display: none; /* Изначально все скрыты */
-}
-
-.screen.active {
-  display: block; /* Активный экран показываем */
-}
-
-h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.hint {
-  font-size: 12px;
-  color: #777;
-  margin-bottom: 20px;
-}
-
-/* Плитки */
-.tile-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.tile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.tile:hover {
-  background-color: #f0f0f0;
-  border-color: #aaa;
-}
-
-.tile-symbol {
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  color: #353535;
-}
-
-.tile-text {
-  font-size: 16px;
-}
-
-/* Информация об авторе */
-.credits {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 10px;
-  margin-top: 20px;
-  font-size: 14px;
-  color: #666;
+  width: 80%;
+  height: 80%;
 }
 
-.credits a {
-  color: #778da9;
-  text-decoration: none;
+.block_based_info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  align-items: center;
 }
 
-.credits a:hover {
-  color: #415a77;
+.photo {
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  grid-row: span 2;
+}
+
+.name, .position {
+  width: 20vh;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.skill-set {
+  grid-column: span 2;
+  font-size: 1.2rem;
+  text-align: left;
 }

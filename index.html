@@ -1,32 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choose Your Device</title>
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="screen-choose-device" class="screen active">
-        <h1>Choose Your Device</h1>
-        <p class="hint">Select either PC or Mobile to proceed</p>
-        <div class="tile-container">
-            <div id="pc-tile" class="tile">
-                <span class="tile-symbol">🖥️</span>
-                <span class="tile-text">PC</span>
-            </div>
-            <div id="mobile-tile" class="tile">
-                <span class="tile-symbol">📱</span>
-                <span class="tile-text">Mobile</span>
-            </div>
-        </div>
-        <!-- Информация об авторе внизу -->
-        <div class="credits">
-            <span>Made by Iskandar Rassulov</span>
-            <span><a href="https://github.com/iskander-rassulov" target="_blank">• GitHub</a></span>
+    <div class="grid-container">
+        <div class="grid-item block_based_info">
+            <div class="photo" style="background-image: url('images/avatar.jpg');"></div>
+            <div class="name">Iskandar Rassulov</div>
+            <div class="position">Back-end Developer</div>
+            <div class="skill-set">Навыки</div>
         </div>
     </div>
-    <script src="scripts.js"></script>
 </body>
 </html>
