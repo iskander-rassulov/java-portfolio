@@ -34,10 +34,12 @@ body, html {
   padding: 2vh;
   border-radius: 2vh;
   background-color: white;
+  width: 40vw;
+  max-width: 520px;
 }
 
 .skill-element {
-  font-size: 1.2vh;
+  font-size: 1.4vh;
   background-color: #e0e0e0;
   padding: 1vh 2vh;
   border-radius: 3vh;
@@ -139,4 +141,150 @@ body, html {
   font-size: 1.4vh;
   text-align: left;
 }
+
+/* Education */
+.education {
+  padding: 1.2vh;
+  text-align: left;
+  width: 25vw; /* Устанавливаем ширину для всего блока */
+  max-width: 600px; /* Ограничиваем максимальную ширину */
+  margin: 0 auto; /* Центрируем блок */
+}
+
+.education-title {
+  background-color: transparent; /* Устанавливаем прозрачный фон */
+  color: #333; /* Изменяем цвет текста на темный */
+  padding: 1vh 0; /* Убираем боковые отступы */
+  border: none; /* Убираем все границы */
+  border-bottom: 2.4px solid #666; /* Добавляем границу только снизу */
+  margin-bottom: 1vh;
+  font-size: 1.8vh;
+  text-align: center;
+  width: 70%; /* Устанавливаем меньшую ширину для title */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.education-info {
+  background-color: #ffffff;
+  border: 2.4px solid #ccc;
+  padding: 2.4vh;
+  padding-top: 0.6vh;
+  border-radius: 1vh; /* Закругляем границы */
+  width: 80%; /* Устанавливаем ширину для информационного блока */
+  box-sizing: border-box; /* Включаем padding и border в общую ширину */
+  position: relative; /* Для добавления линии между блоками */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.education-info h3 {
+  font-size: 1.6vh;
+  margin-bottom: 0.2vh; /* Убираем margin-top */
+}
+
+.education-info p, .education-info ul {
+  font-size: 1.4vh;
+  margin: 0.6vh 0;
+}
+
+/* Стили для degree и field на одной линии */
+.education-info .degree-field {
+  display: flex;
+  gap: 1.2vh;
+}
+
+
+
+/* About Me */
+.about-me {
+  padding: 1.2vh;
+  text-align: left;
+  width: 25vw; /* Устанавливаем ширину для всего блока */
+  max-width: 600px; /* Ограничиваем максимальную ширину */
+  margin: 0 auto; /* Центрируем блок */
+}
+
+.about-me-title {
+  background-color: transparent; /* Устанавливаем прозрачный фон */
+  color: #333; /* Изменяем цвет текста на темный */
+  padding: 1vh 0; /* Убираем боковые отступы */
+  border: none; /* Убираем все границы */
+  border-bottom: 2.4px solid #666; /* Добавляем границу только снизу */
+  margin-bottom: 1vh;
+  font-size: 1.8vh;
+  text-align: center;
+  width: 70%; /* Устанавливаем меньшую ширину для title */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-me-info {
+  background-color: #ffffff;
+  border: 2.4px solid #ccc;
+  padding: 2.4vh;
+  padding-top: 0.6vh;
+  padding-bottom: 0.6vh;
+  border-radius: 1vh; /* Закругляем границы */
+  width: 80%; /* Устанавливаем ширину для информационного блока */
+  box-sizing: border-box; /* Включаем padding и border в общую ширину */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Стили для текста About Me */
+.about-me-text {
+  font-size: 1.4vh;
+  color: #333;
+}
+
+
+/* Links Block */
+.links {
+  padding: 1.2vh;
+  text-align: center;
+  width: 60vw;
+  max-width: 600px;
+  margin: 2vh auto;
+}
+
+.links-box {
+  background-color: #ffffff;
+  border: 2.4px solid #ccc;
+  padding: 1.6vh;
+  border-radius: 1vh;
+  width: 80%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row; /* Изменено с column на row */
+  justify-content: space-between; /* Равномерное распределение */
+  align-items: center;
+  flex-wrap: wrap; /* На случай маленьких экранов */
+  gap: 1vh;
+  margin: 0 auto;
+}
+
+.link-item {
+  color: #274c77;
+  text-decoration: none;
+  font-size: 1.4vh;
+  padding: 0.6vh;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Предотвращает перенос текста */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Добавляет многоточие при переполнении */
+}
+
+.link-item:hover {
+  text-decoration: underline;
+}
+
+/* Для маленьких экранов */
+@media (max-width: 768px) {
+  .links-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 

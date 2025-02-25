@@ -81,3 +81,140 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const educationInfo = [
+        {
+            period: "2019-2023",
+            degree: "Bachelor",
+            field: "Computer Science",
+            institution: "Suleyman Demirel University"
+        },
+        {
+            period: "2023-2024",
+            degree: "Master",
+            field: "Engineering",
+            institution: "University of Cassino and Southern Lazio"
+        }
+    ];
+
+    const educationContainer = document.getElementById("education-info");
+
+    educationInfo.forEach((item, index) => {
+        const itemElement = document.createElement("div");
+        itemElement.classList.add("education-item");
+
+        const periodElement = document.createElement("h3");
+        periodElement.textContent = item.period;
+        itemElement.appendChild(periodElement);
+
+        const degreeFieldContainer = document.createElement("div");
+        degreeFieldContainer.classList.add("degree-field");
+
+        const degreeElement = document.createElement("p");
+        degreeElement.innerHTML = `<strong>Degree:</strong> ${item.degree}`;
+        degreeFieldContainer.appendChild(degreeElement);
+
+        const fieldElement = document.createElement("p");
+        fieldElement.innerHTML = `<strong>Field:</strong> ${item.field}`;
+        degreeFieldContainer.appendChild(fieldElement);
+
+        itemElement.appendChild(degreeFieldContainer);
+
+        const institutionElement = document.createElement("p");
+        institutionElement.innerHTML = `<strong>Institution:</strong> ${item.institution}`;
+        itemElement.appendChild(institutionElement);
+
+        educationContainer.appendChild(itemElement);
+
+        // Add a separator line if it's not the last item
+        if (index < educationInfo.length - 1) {
+            const separator = document.createElement("hr");
+            separator.style.margin = "2.4vh 0";
+            educationContainer.appendChild(separator);
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const aboutMeInfo = "Hello! My name is Iskandar Rassulov. I am a citizen of the Republic of Kazakhstan and currently 23 years old. I can speak languages: Russian [C2], English [C1] and Kazakh [A2]. I enjoy writing logic for healthy web application performance";
+
+    const aboutMeContainer = document.getElementById("about-me-info");
+    
+    // Создаем параграф для всего текста
+    const infoElement = document.createElement("p");
+    infoElement.textContent = aboutMeInfo;
+    
+    // Добавляем класс для стилизации (опционально)
+    infoElement.className = "about-me-text";
+    
+    // Добавляем элемент в контейнер
+    aboutMeContainer.appendChild(infoElement);
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const contactInfo = {
+        github: "https://github.com/iskander-rassulov",
+        email: "iskander.rassulov.2002@gmail.com",
+        linkedin: "#" // Замените на вашу ссылку LinkedIn, если есть
+    };
+
+    const linksContainer = document.getElementById("social-links");
+    
+    // Создаем контейнер для ссылок
+    const linksBox = document.createElement("div");
+    linksBox.classList.add("links-box");
+    
+    // GitHub ссылка
+    const githubLink = document.createElement("a");
+    githubLink.href = contactInfo.github;
+    githubLink.target = "_blank";
+    githubLink.textContent = "GitHub Link";
+    githubLink.classList.add("link-item");
+    linksBox.appendChild(githubLink);
+    
+    // Email
+    const emailLink = document.createElement("a");
+    emailLink.href = "mailto:" + contactInfo.email;
+    emailLink.textContent = contactInfo.email;
+    emailLink.classList.add("link-item");
+    linksBox.appendChild(emailLink);
+    
+    // LinkedIn ссылка
+    const linkedinLink = document.createElement("a");
+    linkedinLink.href = contactInfo.linkedin;
+    linkedinLink.target = "_blank";
+    linkedinLink.textContent = "LinkedIn Link";
+    linkedinLink.classList.add("link-item");
+    linksBox.appendChild(linkedinLink);
+    
+    // Добавляем блок ссылок в контейнер
+    linksContainer.appendChild(linksBox);
+});
