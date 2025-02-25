@@ -1,25 +1,64 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iskandar Rassulov</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="grid-container">
-        <div class="grid-item block_based_info">
-          <div class="photo" style="background-image: url('images/avatar.jpg');"></div>
-          <div class="column">
-            <div class="name">Iskandar Rassulov</div>
-            <div class="position">Back-end Developer</div>
-          </div>
-          <div class="skill-set">Skills</div>
+    <div class="container">
+        <!-- Photo Element -->
+        <div class="photo">
+            <img src="images/avatar.jpg" alt="My Photo">
+        </div>
+
+        <!-- Skill Set -->
+        <div class="skill-set">
+          <span class="skill-element">Java</span>
+          <span class="skill-element">Spring</span>
+          <span class="skill-element">PostgreSQL</span>
+          <span class="skill-element">RestAPI</span>
+          <span class="skill-element">Maven</span>
+          <span class="skill-element">Gradle</span>
+      </div>
+
+      <!-- Position -->
+      <div class="position">
+          Software Developer
+      </div>
+
+      <!-- Name -->
+      <div class="name">
+          Iskandar Rassulov
+      </div>
+
+      <!-- Experience -->
+      <div class="experience">
+        <div class="experience-title">Experience</div>
+        <div class="experience-info" id="experience-info">
+          <!-- Данные будут добавлены с помощью JavaScript -->
         </div>
       </div>
-      
+
+
+
+        <!-- Links -->
+        <div class="links">
+            <!-- Link elements will go here -->
+        </div>
+
+        <!-- Education -->
+        <div class="education">
+            <!-- Education title and info will go here -->
+        </div>
+
+        <!-- About Me -->
+        <div class="about-me">
+            <!-- About me title and info will go here -->
+        </div>
+    </div>
+
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
