@@ -1,0 +1,31 @@
+header {
+    background-color: #333;
+    padding: 10px 0;
+    width: 100%; /* Задаем ширину на 100%, чтобы header был на всю ширину экрана */
+    position: fixed; /* Фиксируем header в верхней части страницы */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Убедитесь, что header будет поверх остального контента */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
