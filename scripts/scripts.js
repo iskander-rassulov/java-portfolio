@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const contactInfo = {
         github: "https://github.com/iskander-rassulov",
         email: "iskander.rassulov.2002@gmail.com",
-        linkedin: "#" // Замените на вашу ссылку LinkedIn, если есть
+        linkedin: "https://www.linkedin.com/in/iskandar-rassulov/" // Замените на вашу ссылку LinkedIn, если есть
     };
 
     const linksContainer = document.getElementById("social-links");
