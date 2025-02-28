@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    const aboutMeInfo = "Hello! My name is Iskandar Rassulov. I am a citizen of the Republic of Kazakhstan and currently 23 years old. I can speak languages: Russian [C2], English [C1] and Kazakh [A2]. I enjoy writing logic for healthy web application performance";
+    const aboutMeInfo = "Hello! My name is Iskandar. I am a citizen of the Republic of Kazakhstan and currently 23 years old. I can speak languages: Russian [C2], English [C1] and Kazakh [A2]. I enjoy writing logic for healthy web application performance";
 
     const aboutMeContainer = document.getElementById("about-me-info");
     
